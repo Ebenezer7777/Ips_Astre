@@ -1,0 +1,75 @@
+{
+    "hypotheses": [
+        {
+            "libelle": "Java, Python, JavaScript, HTML, CSS -> IPS",
+            "question": "1- Quel est ton langage de programmation préféré ?",
+            "description": "Les étudiants choisissant Java à la question 1 sont plus susceptibles de rejoindre IPS.",
+            "choices": [
+                "Java",
+                "Python",
+                "JavaScript, HTML, CSS"
+            ],
+            "filiere": "IPS",
+            "weight": 0.8
+        },
+        {
+            "libelle": "C, C++ -> ASTRE",
+            "question": "1- Quel est ton langage de programmation préféré ?",
+            "description": "Les étudiants optant pour C ou C++ à la question 1 seront plus enclins à choisir ASTRE.",
+            "choices": [
+                "C",
+                "C++"
+            ],
+            "filiere": "ASTRE",
+            "weight": 0.8
+        },
+        {
+            "libelle": "UX/UI, Frontend / Backend -> IPS",
+            "question": "3- Quelle terminologie te parle le plus ?",
+            "description": "Les étudiants choisissant UX/UI ou Frontend / Backend à la question 3 sont plus susceptibles de rejoindre IPS.",
+            "choices": [
+                "UX/UI",
+                "Frontend / Backend"
+            ],
+            "filiere": "IPS",
+            "weight": 0.5
+        },
+        {
+            "libelle": "Arduino -> ASTRE",
+            "question": "4- Parmi ces différentes technologies, avec lesquelles as-tu déjà expérimenté pendant ton temps libre ?",
+            "description": "Les étudiants optant pour Arduino à la question 4 sont plus enclins à choisir ASTRE.",
+            "choices": [
+                "Arduino"
+            ],
+            "filiere": "ASTRE",
+            "weight": 0.6
+        },
+        {
+            "libelle": "VR/AR, Intelligence Artificielle, Moteurs de jeux video -> IPS",
+            "question": "4- Parmi ces différentes technologies, avec lesquelles as-tu déjà expérimenté pendant ton temps libre ?",
+            "description": "Les étudiants optant pour VR/AR , Intelligence Artificielle ou Moteurs de jeux video à la question 4 sont plus enclins à choisir IPS.",
+            "choices": [
+                "VR/AR",
+                "Intelligence Artficielle",
+                "Moteurs de jeux vidéo"
+            ],
+            "filiere": "IPS",
+            "weight": 0.77
+        },
+        {
+            "libelle": "Grande entreprise, grand groupe, Laboratoire de recherche -> ASTRE",
+
+            "question": "13- Ton environnement de travail plus tard :",
+            "description": "Les étudiants choisissant Grande entreprise, grand groupe ou Laboratoire de recherche à la question 13 sont plus susceptibles de rejoindre IPS.",
+            "choices": [
+                "Grande entreprise, grand groupe",
+                "Laboratoire de recherche"
+            ],
+            "filiere": "ASTRE",
+            "weight": 0.8
+
+
+        }
+
+    ]
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>IPS/ASTRE</title>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+        <h1 class="navbar-brand text-capitalize text-center w-100">Prediction IPS / ASTRE</h1>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="py-5">
+            <!-- Upload CSV -->
+            <div class="file-upload">
+                <div class="image-upload-wrap">
+                    <input class="file-upload-input" type='file' id="csvFileInput" onchange="readURL(this);"
+                        accept=".csv" />
+                    <div class="drag-text">
+                        <h3>Drag and drop a file </h3>
+                    </div>
+                </div>
+                <div class="file-upload-content">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                        <button type="button" onclick="removeUpload()" class="remove-image">Remove <span
+                                class="image-title">Uploaded Image</span></button>
+                    </div>
+                </div>
+                <div class="py-2"></div>
+                <button id="evaluateButton" class="file-upload-btn  type=" button">Évaluer Le Fichier</button>
+            </div>
+
+        </div>
+
+
+        <!-- Sliders pour les poids des hypothèses -->
+
+
+        <div class="row  py-5 shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="col-12 ">
+                <div id="hypothesesControls"></div>
+            </div>
+            <div class="col-12">
+                <h1 class="text-center">Scores par Étudiant</h1>
+                <canvas id="studentsChart"></canvas>
+                <br>
+                <br>
+                <h1 class="text-center">Comparaison IPS vs ASTRE</h1>
+                <canvas id="divergentChart"></canvas>
+
+            </div>
+        </div>
+
+        <div class="row align-items-center shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="col">
+                <table id="resultsTable" class="table table-bordered border-primary "">
+                        <thead class=" thead-dark">
+                    <tr>
+                        <th scope="col">Numéro Étudiant</th>
+                        <th scope="col">Score IPS</th>
+                        <th scope="col">Score ASTRE</th>
+                        <th scope="col">Filière Prediction</th>
+                    </tr>
+                    </thead>
+                    <tbody id="resultsBody" class="table-group-divider">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <canvas id="percentageChart"></canvas>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script src="upload.js"></script>
+</body>
+
+</html>
